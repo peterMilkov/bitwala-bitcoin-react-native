@@ -1,2 +1,2 @@
 # bitwala-bitcoin-react-native
-Coding challange
+Coding challenge
