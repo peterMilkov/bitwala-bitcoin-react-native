@@ -11,15 +11,15 @@
 		13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
+		1A91B184A0E629682E79F129 /* libPods-BitwalaApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DDCB2D914BC15DB1E684DB4 /* libPods-BitwalaApp.a */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		2DCD954D1E0B4F2C00145EB5 /* BitwalaAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* BitwalaAppTests.m */; };
-		550A4C965EFC5CB87B780998 /* libPods-BitwalaApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FCC513E634556704AF3D4792 /* libPods-BitwalaApp.a */; };
-		5EA551124832511C662F6BF0 /* libPods-BitwalaApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EEA22F38CAB995BE68336A /* libPods-BitwalaApp-tvOSTests.a */; };
-		759C2F061DB62DFA322070E3 /* libPods-BitwalaApp-BitwalaAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A943F9A96F37A09C1E0E64C /* libPods-BitwalaApp-BitwalaAppTests.a */; };
+		3F94DB8EA79F84BB42BB06BF /* libPods-BitwalaApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D3CD12731CC0516D9AEAEB45 /* libPods-BitwalaApp-tvOS.a */; };
+		74947B857EA8E718AB40F1A2 /* libPods-BitwalaApp-BitwalaAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = DC1DE46A49E1E19785D1D612 /* libPods-BitwalaApp-BitwalaAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
-		AA4C47D44004D565668CCA81 /* libPods-BitwalaApp-tvOS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 71BA178A27B6628CBCC4417D /* libPods-BitwalaApp-tvOS.a */; };
+		88752B3FD4F3B9B43C5FFB54 /* libPods-BitwalaApp-tvOSTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B384E9E9602B021900F193CF /* libPods-BitwalaApp-tvOSTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,29 +44,29 @@
 		00E356EE1AD99517003FC87E /* BitwalaAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BitwalaAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		00E356F11AD99517003FC87E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		00E356F21AD99517003FC87E /* BitwalaAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BitwalaAppTests.m; sourceTree = "<group>"; };
-		0F9185525D5E0110643E5605 /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-BitwalaAppTests/Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
+		0DDCB2D914BC15DB1E684DB4 /* libPods-BitwalaApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07F961A680F5B00A75B9A /* BitwalaApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BitwalaApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		13B07FAF1A68108700A75B9A /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = AppDelegate.h; path = BitwalaApp/AppDelegate.h; sourceTree = "<group>"; };
 		13B07FB01A68108700A75B9A /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = AppDelegate.m; path = BitwalaApp/AppDelegate.m; sourceTree = "<group>"; };
 		13B07FB51A68108700A75B9A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = BitwalaApp/Images.xcassets; sourceTree = "<group>"; };
 		13B07FB61A68108700A75B9A /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = Info.plist; path = BitwalaApp/Info.plist; sourceTree = "<group>"; };
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = BitwalaApp/main.m; sourceTree = "<group>"; };
-		22AF03B8F3A42322AF8E1ABF /* Pods-BitwalaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp/Pods-BitwalaApp.release.xcconfig"; sourceTree = "<group>"; };
-		28C1D1CAF01D9CB600DCB9C9 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOSTests/Pods-BitwalaApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		18749728869D4F1E2D14AF9E /* Pods-BitwalaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp/Pods-BitwalaApp.debug.xcconfig"; sourceTree = "<group>"; };
 		2D02E47B1E0B4A5D006451C7 /* BitwalaApp-tvOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BitwalaApp-tvOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D02E4901E0B4A5D006451C7 /* BitwalaApp-tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "BitwalaApp-tvOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		2F41D20B6870533D870A1B1E /* Pods-BitwalaApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp/Pods-BitwalaApp.debug.xcconfig"; sourceTree = "<group>"; };
-		3DF907AEF6B62656E4E1183B /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-BitwalaAppTests.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-BitwalaAppTests/Pods-BitwalaApp-BitwalaAppTests.release.xcconfig"; sourceTree = "<group>"; };
-		71BA178A27B6628CBCC4417D /* libPods-BitwalaApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		7A943F9A96F37A09C1E0E64C /* libPods-BitwalaApp-BitwalaAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-BitwalaAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		532204D766E67154791EFD0C /* Pods-BitwalaApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp/Pods-BitwalaApp.release.xcconfig"; sourceTree = "<group>"; };
+		666234B2EFBE83FEB8682960 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOSTests.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOSTests/Pods-BitwalaApp-tvOSTests.release.xcconfig"; sourceTree = "<group>"; };
+		7392C9508CFB68E95BD651B1 /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-BitwalaAppTests.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-BitwalaAppTests/Pods-BitwalaApp-BitwalaAppTests.release.xcconfig"; sourceTree = "<group>"; };
+		7DE0C2B9D7406FD2D40AF949 /* Pods-BitwalaApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOS/Pods-BitwalaApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
 		81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = LaunchScreen.storyboard; path = BitwalaApp/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		867FB3C644D28074003A418E /* Pods-BitwalaApp-tvOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOS.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOS/Pods-BitwalaApp-tvOS.debug.xcconfig"; sourceTree = "<group>"; };
-		8D134A98056CE7253085F97E /* Pods-BitwalaApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOS/Pods-BitwalaApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
-		A7DDFBBFB77831B11E81F06E /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOSTests/Pods-BitwalaApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
-		B2EEA22F38CAB995BE68336A /* libPods-BitwalaApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		9248F60200E3346F288862E7 /* Pods-BitwalaApp-tvOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOS.release.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOS/Pods-BitwalaApp-tvOS.release.xcconfig"; sourceTree = "<group>"; };
+		B2EFE3814441F76494E31717 /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-tvOSTests.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-tvOSTests/Pods-BitwalaApp-tvOSTests.debug.xcconfig"; sourceTree = "<group>"; };
+		B384E9E9602B021900F193CF /* libPods-BitwalaApp-tvOSTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-tvOSTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3CD12731CC0516D9AEAEB45 /* libPods-BitwalaApp-tvOS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-tvOS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC1DE46A49E1E19785D1D612 /* libPods-BitwalaApp-BitwalaAppTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp-BitwalaAppTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		ED2971642150620600B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = Platforms/AppleTVOS.platform/Developer/SDKs/AppleTVOS12.0.sdk/System/Library/Frameworks/JavaScriptCore.framework; sourceTree = DEVELOPER_DIR; };
-		FCC513E634556704AF3D4792 /* libPods-BitwalaApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-BitwalaApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F39344E23EC6A1352CDDD95F /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig"; path = "Target Support Files/Pods-BitwalaApp-BitwalaAppTests/Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,7 +74,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				759C2F061DB62DFA322070E3 /* libPods-BitwalaApp-BitwalaAppTests.a in Frameworks */,
+				74947B857EA8E718AB40F1A2 /* libPods-BitwalaApp-BitwalaAppTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -82,7 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				550A4C965EFC5CB87B780998 /* libPods-BitwalaApp.a in Frameworks */,
+				1A91B184A0E629682E79F129 /* libPods-BitwalaApp.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,7 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				AA4C47D44004D565668CCA81 /* libPods-BitwalaApp-tvOS.a in Frameworks */,
+				3F94DB8EA79F84BB42BB06BF /* libPods-BitwalaApp-tvOS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -98,7 +98,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5EA551124832511C662F6BF0 /* libPods-BitwalaApp-tvOSTests.a in Frameworks */,
+				88752B3FD4F3B9B43C5FFB54 /* libPods-BitwalaApp-tvOSTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,10 +141,10 @@
 			children = (
 				ED297162215061F000B7C4FE /* JavaScriptCore.framework */,
 				ED2971642150620600B7C4FE /* JavaScriptCore.framework */,
-				FCC513E634556704AF3D4792 /* libPods-BitwalaApp.a */,
-				7A943F9A96F37A09C1E0E64C /* libPods-BitwalaApp-BitwalaAppTests.a */,
-				71BA178A27B6628CBCC4417D /* libPods-BitwalaApp-tvOS.a */,
-				B2EEA22F38CAB995BE68336A /* libPods-BitwalaApp-tvOSTests.a */,
+				0DDCB2D914BC15DB1E684DB4 /* libPods-BitwalaApp.a */,
+				DC1DE46A49E1E19785D1D612 /* libPods-BitwalaApp-BitwalaAppTests.a */,
+				D3CD12731CC0516D9AEAEB45 /* libPods-BitwalaApp-tvOS.a */,
+				B384E9E9602B021900F193CF /* libPods-BitwalaApp-tvOSTests.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -164,7 +164,7 @@
 				00E356EF1AD99517003FC87E /* BitwalaAppTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
-				ABAE8FD3714867BF653F1D32 /* Pods */,
+				948D7B8FA74AF830B359129F /* Pods */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -182,17 +182,17 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		ABAE8FD3714867BF653F1D32 /* Pods */ = {
+		948D7B8FA74AF830B359129F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				2F41D20B6870533D870A1B1E /* Pods-BitwalaApp.debug.xcconfig */,
-				22AF03B8F3A42322AF8E1ABF /* Pods-BitwalaApp.release.xcconfig */,
-				0F9185525D5E0110643E5605 /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */,
-				3DF907AEF6B62656E4E1183B /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */,
-				867FB3C644D28074003A418E /* Pods-BitwalaApp-tvOS.debug.xcconfig */,
-				8D134A98056CE7253085F97E /* Pods-BitwalaApp-tvOS.release.xcconfig */,
-				A7DDFBBFB77831B11E81F06E /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */,
-				28C1D1CAF01D9CB600DCB9C9 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */,
+				18749728869D4F1E2D14AF9E /* Pods-BitwalaApp.debug.xcconfig */,
+				532204D766E67154791EFD0C /* Pods-BitwalaApp.release.xcconfig */,
+				F39344E23EC6A1352CDDD95F /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */,
+				7392C9508CFB68E95BD651B1 /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */,
+				7DE0C2B9D7406FD2D40AF949 /* Pods-BitwalaApp-tvOS.debug.xcconfig */,
+				9248F60200E3346F288862E7 /* Pods-BitwalaApp-tvOS.release.xcconfig */,
+				B2EFE3814441F76494E31717 /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */,
+				666234B2EFBE83FEB8682960 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
@@ -205,11 +205,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 00E357021AD99517003FC87E /* Build configuration list for PBXNativeTarget "BitwalaAppTests" */;
 			buildPhases = (
-				F3C8C1B1500B63A13C3FBB0A /* [CP] Check Pods Manifest.lock */,
+				502F2581AAA34005EEF3F6DB /* [CP] Check Pods Manifest.lock */,
 				00E356EA1AD99517003FC87E /* Sources */,
 				00E356EB1AD99517003FC87E /* Frameworks */,
 				00E356EC1AD99517003FC87E /* Resources */,
-				33B788928225CA533F37A789 /* [CP] Copy Pods Resources */,
+				88F3D5C123EDA4F5247848BB /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -225,13 +225,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 13B07F931A680F5B00A75B9A /* Build configuration list for PBXNativeTarget "BitwalaApp" */;
 			buildPhases = (
-				FE75E7B2B15F6BF152B3D73D /* [CP] Check Pods Manifest.lock */,
+				17B22E22DF08698FD39EA504 /* [CP] Check Pods Manifest.lock */,
 				FD10A7F022414F080027D42C /* Start Packager */,
 				13B07F871A680F5B00A75B9A /* Sources */,
 				13B07F8C1A680F5B00A75B9A /* Frameworks */,
 				13B07F8E1A680F5B00A75B9A /* Resources */,
 				00DD1BFF1BD5951E006B06BC /* Bundle React Native code and images */,
-				3D9E08C7002796CECE887CE8 /* [CP] Copy Pods Resources */,
+				AFE4E259E0BA78B1D2C508EF /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -246,7 +246,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BA1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BitwalaApp-tvOS" */;
 			buildPhases = (
-				762E3E7151C4990466450132 /* [CP] Check Pods Manifest.lock */,
+				E6082FB40DB0891B338C01AE /* [CP] Check Pods Manifest.lock */,
 				FD10A7F122414F3F0027D42C /* Start Packager */,
 				2D02E4771E0B4A5D006451C7 /* Sources */,
 				2D02E4781E0B4A5D006451C7 /* Frameworks */,
@@ -266,7 +266,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2D02E4BB1E0B4A5E006451C7 /* Build configuration list for PBXNativeTarget "BitwalaApp-tvOSTests" */;
 			buildPhases = (
-				91484E3982021A75053708E8 /* [CP] Check Pods Manifest.lock */,
+				B05B9177CFD780DDAA0554EB /* [CP] Check Pods Manifest.lock */,
 				2D02E48C1E0B4A5D006451C7 /* Sources */,
 				2D02E48D1E0B4A5D006451C7 /* Frameworks */,
 				2D02E48E1E0B4A5D006451C7 /* Resources */,
@@ -377,6 +377,28 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
+		17B22E22DF08698FD39EA504 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
 		2D02E4CB1E0B4B27006451C7 /* Bundle React Native Code And Images */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -391,7 +413,29 @@
 			shellPath = /bin/sh;
 			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh";
 		};
-		33B788928225CA533F37A789 /* [CP] Copy Pods Resources */ = {
+		502F2581AAA34005EEF3F6DB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-BitwalaAppTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		88F3D5C123EDA4F5247848BB /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -409,7 +453,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitwalaApp-BitwalaAppTests/Pods-BitwalaApp-BitwalaAppTests-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		3D9E08C7002796CECE887CE8 /* [CP] Copy Pods Resources */ = {
+		AFE4E259E0BA78B1D2C508EF /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -427,29 +471,7 @@
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BitwalaApp/Pods-BitwalaApp-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
-		762E3E7151C4990466450132 /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-tvOS-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		91484E3982021A75053708E8 /* [CP] Check Pods Manifest.lock */ = {
+		B05B9177CFD780DDAA0554EB /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -471,7 +493,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		F3C8C1B1500B63A13C3FBB0A /* [CP] Check Pods Manifest.lock */ = {
+		E6082FB40DB0891B338C01AE /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -486,7 +508,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-BitwalaAppTests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-tvOS-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -529,28 +551,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "export RCT_METRO_PORT=\"${RCT_METRO_PORT:=8081}\"\necho \"export RCT_METRO_PORT=${RCT_METRO_PORT}\" > \"${SRCROOT}/../node_modules/react-native/scripts/.packager.env\"\nif [ -z \"${RCT_NO_LAUNCH_PACKAGER+xxx}\" ] ; then\n  if nc -w 5 -z localhost ${RCT_METRO_PORT} ; then\n    if ! curl -s \"http://localhost:${RCT_METRO_PORT}/status\" | grep -q \"packager-status:running\" ; then\n      echo \"Port ${RCT_METRO_PORT} already in use, packager is either not running or not running correctly\"\n      exit 2\n    fi\n  else\n    open \"$SRCROOT/../node_modules/react-native/scripts/launchPackager.command\" || echo \"Can't start packager automatically\"\n  fi\nfi\n";
-			showEnvVarsInLog = 0;
-		};
-		FE75E7B2B15F6BF152B3D73D /* [CP] Check Pods Manifest.lock */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
-				"${PODS_ROOT}/Manifest.lock",
-			);
-			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-BitwalaApp-checkManifestLockResult.txt",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -608,7 +608,7 @@
 /* Begin XCBuildConfiguration section */
 		00E356F61AD99517003FC87E /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0F9185525D5E0110643E5605 /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */;
+			baseConfigurationReference = F39344E23EC6A1352CDDD95F /* Pods-BitwalaApp-BitwalaAppTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				GCC_PREPROCESSOR_DEFINITIONS = (
@@ -631,7 +631,7 @@
 		};
 		00E356F71AD99517003FC87E /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3DF907AEF6B62656E4E1183B /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */;
+			baseConfigurationReference = 7392C9508CFB68E95BD651B1 /* Pods-BitwalaApp-BitwalaAppTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				COPY_PHASE_STRIP = NO;
@@ -651,7 +651,7 @@
 		};
 		13B07F941A680F5B00A75B9A /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 2F41D20B6870533D870A1B1E /* Pods-BitwalaApp.debug.xcconfig */;
+			baseConfigurationReference = 18749728869D4F1E2D14AF9E /* Pods-BitwalaApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -674,7 +674,7 @@
 		};
 		13B07F951A680F5B00A75B9A /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 22AF03B8F3A42322AF8E1ABF /* Pods-BitwalaApp.release.xcconfig */;
+			baseConfigurationReference = 532204D766E67154791EFD0C /* Pods-BitwalaApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
@@ -695,7 +695,7 @@
 		};
 		2D02E4971E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 867FB3C644D28074003A418E /* Pods-BitwalaApp-tvOS.debug.xcconfig */;
+			baseConfigurationReference = 7DE0C2B9D7406FD2D40AF949 /* Pods-BitwalaApp-tvOS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -723,7 +723,7 @@
 		};
 		2D02E4981E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8D134A98056CE7253085F97E /* Pods-BitwalaApp-tvOS.release.xcconfig */;
+			baseConfigurationReference = 9248F60200E3346F288862E7 /* Pods-BitwalaApp-tvOS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "App Icon & Top Shelf Image";
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
@@ -751,7 +751,7 @@
 		};
 		2D02E4991E0B4A5E006451C7 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A7DDFBBFB77831B11E81F06E /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */;
+			baseConfigurationReference = B2EFE3814441F76494E31717 /* Pods-BitwalaApp-tvOSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
@@ -778,7 +778,7 @@
 		};
 		2D02E49A1E0B4A5E006451C7 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 28C1D1CAF01D9CB600DCB9C9 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */;
+			baseConfigurationReference = 666234B2EFBE83FEB8682960 /* Pods-BitwalaApp-tvOSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CLANG_ANALYZER_NONNULL = YES;
