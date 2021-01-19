@@ -8,18 +8,15 @@ export const colors = {
   gray: 'gray',
 };
 
-export const screenOptions = {
-  headerStyle: {
-    backgroundColor: colors.lightGray,
-  },
-  headerTintColor: colors.white,
-};
-
 export const globalStyles = StyleSheet.create({
   center: {
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
+  },
+  bigTitle: {
+    fontSize: 18,
+    fontWeight: 'bold',
   },
   title: {
     fontSize: 14,
@@ -31,6 +28,7 @@ export const globalStyles = StyleSheet.create({
   row: {
     width: '100%',
     flexDirection: 'row',
+    alignItems: 'flex-end',
   },
   column: {
     width: '100%',

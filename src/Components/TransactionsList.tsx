@@ -1,8 +1,10 @@
 import React from 'react';
-import {View, Text, ActivityIndicator, Pressable} from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 import {gql, useQuery} from '@apollo/client';
 import {colors, globalStyles} from '../styles';
 import {FlatList} from 'react-native-gesture-handler';
+import {useNavigation} from '@react-navigation/native';
+import AppLoading from './AppLoading';
 
 const GET_TRANSACTIONS = gql`
   query {
@@ -17,54 +19,60 @@ const GET_TRANSACTIONS = gql`
   }
 `;
 
-const renderTransactions = ({
-  item: {
-    index,
-    date: {date},
-  },
-}: {
-  item: {
-    index: string;
-    date: {date: string};
-  };
-}) => {
-  return (
-    <Pressable
-      style={[
-        {
-          width: '100%',
-          backgroundColor: 'white',
-          borderBottomColor: colors.lightGray,
-          borderBottomWidth: 1,
-          flexDirection: 'row',
-          justifyContent: 'space-between',
-          padding: 20,
-        },
-      ]}
-      onPress={() => {}}>
-      <Text style={[globalStyles.title]}>{`${date}`}</Text>
-      <Text style={globalStyles.infoTxt}>{`${index}`}</Text>
-    </Pressable>
-  );
-};
-
 const TransactionsList = () => {
-  const {loading, error, data} = useQuery(GET_TRANSACTIONS, {
-    variables: {limit: 10},
-  });
+  const {navigate} = useNavigation();
+  const {loading, data} = useQuery(GET_TRANSACTIONS);
+
+  const renderTransactions = ({
+    item: {
+      index,
+      date: {date},
+    },
+  }: {
+    item: {
+      index: string;
+      date: {date: string};
+    };
+  }) => {
+    return (
+      <Pressable
+        style={[
+          {
+            width: '100%',
+            backgroundColor: 'white',
+            borderBottomColor: colors.lightGray,
+            borderBottomWidth: 1,
+            flexDirection: 'row',
+            justifyContent: 'space-between',
+            padding: 20,
+          },
+        ]}
+        onPress={() => {
+          navigate('TransactionsDetails', {
+            transaction: {
+              index,
+              date,
+            },
+          });
+        }}>
+        <Text style={[globalStyles.title]}>{`${date}`}</Text>
+        <Text style={globalStyles.infoTxt}>{`${index}`}</Text>
+      </Pressable>
+    );
+  };
+
+  if (loading) {
+    return <AppLoading />;
+  }
 
   return (
     <View style={globalStyles.center}>
-      {loading ? (
-        <ActivityIndicator size={'large'} color={colors.tomato} />
-      ) : (
-        <FlatList
-          style={{width: '100%', height: '100%'}}
-          data={data?.bitcoin.transactions}
-          renderItem={renderTransactions}
-          keyExtractor={(item) => item.index}
-        />
-      )}
+      <FlatList
+        style={{width: '100%', height: '100%'}}
+        data={data?.bitcoin.transactions}
+        renderItem={renderTransactions}
+        keyExtractor={(item) => item.index}
+      />
     </View>
   );
 };

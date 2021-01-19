@@ -1,10 +1,12 @@
 import React from 'react';
-import {View, Text, ActivityIndicator, Pressable} from 'react-native';
+import {View, Text, Pressable} from 'react-native';
 import {gql, useQuery} from '@apollo/client';
-import {colors, globalStyles} from '../styles';
+import {globalStyles} from '../styles';
 import {FlatList} from 'react-native-gesture-handler';
 import {format} from 'date-fns/esm';
 import {fromUnixTime} from 'date-fns';
+import {useNavigation} from '@react-navigation/native';
+import AppLoading from './AppLoading';
 
 const GET_BLOCKS = gql`
   query {
@@ -23,56 +25,58 @@ const GET_BLOCKS = gql`
   }
 `;
 
-const renderBlocks = ({
-  item: {
-    blockHash,
-    height,
-    timestamp: {unixtime},
-  },
-}: {
-  item: {
-    blockHash: string;
-    height: string;
-    timestamp: {unixtime: number};
-  };
-}) => {
-  return (
-    <Pressable style={globalStyles.rowBtn} onPress={() => {}}>
-      <View style={globalStyles.row}>
-        <Text style={[globalStyles.title, {paddingBottom: 10}]}>{`${format(
-          fromUnixTime(unixtime),
-          'yyyy-MM-dd HH:ss',
-        )}`}</Text>
-      </View>
-      <View style={globalStyles.row}>
-        <Text style={globalStyles.title}>{'Height: '}</Text>
-        <Text style={globalStyles.infoTxt}>{`${height}`}</Text>
-      </View>
-      <View style={globalStyles.column}>
-        <Text style={globalStyles.title}>{`Hash: `}</Text>
-        <Text style={globalStyles.infoTxt}>{`${blockHash}`}</Text>
-      </View>
-    </Pressable>
-  );
-};
-
 const BlocksList = () => {
-  const {loading, data} = useQuery(GET_BLOCKS, {
-    variables: {limit: 10},
-  });
+  const {navigate} = useNavigation();
+  const {loading, data} = useQuery(GET_BLOCKS);
+
+  const renderBlocks = ({
+    item,
+  }: {
+    item: {
+      blockHash: string;
+      height: string;
+      timestamp: {unixtime: number};
+    };
+  }) => {
+    let {blockHash, height, timestamp} = item;
+    return (
+      <Pressable
+        style={globalStyles.rowBtn}
+        onPress={() => {
+          navigate('BlocksDetails', {
+            block: item,
+          });
+        }}>
+        <View style={globalStyles.row}>
+          <Text style={[globalStyles.title, {paddingBottom: 10}]}>{`${format(
+            fromUnixTime(timestamp.unixtime),
+            'yyyy-MM-dd HH:ss',
+          )}`}</Text>
+        </View>
+        <View style={globalStyles.row}>
+          <Text style={globalStyles.title}>{'Height: '}</Text>
+          <Text style={globalStyles.infoTxt}>{`${height}`}</Text>
+        </View>
+        <View style={globalStyles.column}>
+          <Text style={globalStyles.title}>{`Hash: `}</Text>
+          <Text style={globalStyles.infoTxt}>{`${blockHash}`}</Text>
+        </View>
+      </Pressable>
+    );
+  };
+
+  if (loading) {
+    return <AppLoading />;
+  }
 
   return (
     <View style={globalStyles.center}>
-      {loading ? (
-        <ActivityIndicator size={'large'} color={colors.tomato} />
-      ) : (
-        <FlatList
-          style={{width: '100%', height: '100%'}}
-          data={data?.bitcoin.blocks}
-          renderItem={renderBlocks}
-          keyExtractor={(item) => item.blockHash}
-        />
-      )}
+      <FlatList
+        style={{width: '100%', height: '100%'}}
+        data={data?.bitcoin.blocks}
+        renderItem={renderBlocks}
+        keyExtractor={(item) => item.blockHash}
+      />
     </View>
   );
 };

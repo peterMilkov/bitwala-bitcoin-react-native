@@ -11,10 +11,12 @@
   },
   "dependencies": {
     "@apollo/client": "^3.3.7",
+    "@react-native-community/async-storage": "^1.12.1",
     "@react-native-community/masked-view": "^0.1.10",
     "@react-navigation/bottom-tabs": "^5.11.3",
     "@react-navigation/native": "^5.9.0",
     "@react-navigation/stack": "^5.13.0",
+    "apollo3-cache-persist": "^0.9.1",
     "date-fns": "^2.16.1",
     "graphql": "^15.4.0",
     "react": "16.13.1",

@@ -10,22 +10,40 @@
 import 'react-native-gesture-handler';
 import {NavigationContainer} from '@react-navigation/native';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
+import AsyncStorage from '@react-native-community/async-storage';
 import {ApolloClient, InMemoryCache, ApolloProvider} from '@apollo/client';
-
-import React from 'react';
+import {persistCache} from 'apollo3-cache-persist';
+import React, {useEffect, useState} from 'react';
 import {SafeAreaView, View, Text, StatusBar} from 'react-native';
 import TransactionsScreen from './Containers/TransactionScreen';
 import BlocksScreen from './Containers/BlocksScreen';
 import {colors} from './styles';
+import AppLoading from './Components/AppLoading';
+
+const cache = new InMemoryCache();
 
 const client = new ApolloClient({
   uri: 'https://graphql.bitquery.io',
-  cache: new InMemoryCache(),
+  cache,
+  defaultOptions: {watchQuery: {fetchPolicy: 'cache-and-network'}},
 });
 
 const Tab = createBottomTabNavigator();
 
 const App = () => {
+  const [loadingCache, setLoadingCache] = useState(true);
+
+  useEffect(() => {
+    persistCache({
+      cache,
+      storage: AsyncStorage,
+    }).then(() => setLoadingCache(false));
+  }, []);
+
+  if (loadingCache) {
+    return <AppLoading />;
+  }
+
   return (
     <ApolloProvider client={client}>
       <NavigationContainer>
